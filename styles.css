@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Roboto+Condensed:ital,wght@0,300;0,700;1,400;1,700&display=swap');
+
+
+:root {  /* this is how some color variables are made */
+          
+--pale-blue: hsl(225, 100%, 94%);
+--bright-blue: hsl(245, 75%, 52%);
+--very-pale-blue: hsl(225, 100%, 98%);
+--desaturated-blue: hsl(224, 23%, 55%);
+--dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);  
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CARD STYLE @@@@ CARD STYLE @@@@ CARD STYLE @@@@ */
+.card {
+    width: 450px;
+    background-color: white;
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 50px auto; 
+    /* 50px, top and bottom of div */
+    /* auto is applied to left and right.
+     Auto makes the margins equal on both sides */  
+}
+
+.title {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.hero-image {
+    width: 100%;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* centers the content */
+    text-align: center; /* this centers the text */ 
+    font-size: 18px;
+}
+
+.container > * {
+    margin: 13px 0;
+}
+
+/* ORDER DESC @@@@ ORDER DESC @@@@ ORDER DESC @@@@ ORDER DESC */
+.order-description {
+    line-height: 25px;
+}
+
+.plan-container {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;  /* this rounds off the border */
+    display: flex;     /* sets the flexible length on flexible items */
+    flex-direction: row;
+    justify-content: space-between; /* how the browser distributes space */
+    /* space-between will space them evenly */
+    align-items: center;  /* items are aligned to the center */
+}
+
+.plan-description {
+    line-height: 20px;
+    margin-right: 75px;
+
+}
+
+/* CHANGE @@@@ CHANGE @@@@ CHANGE @@@@ CHANGE @@@@ CHANGE */
+.plan-contrainer a {
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.plan-container a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plan-container strong {
+    color: var(--dark-blue);
+}
+
+button {
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+/* PROCEED BUTTON @@@@ PROCEED BUTTON @@@@ PROCEED BUTTON */
+.proceed-button {
+    background-color: var(--bright-blue);
+    padding: 1rem 0;
+    color: white;
+    box-shadow: 0 20px 30px -8px rgb(197 289 245);
+   
+}
+
+.proceed-button:hover {
+    opacity: 0.8;
+}
+
+/* CANCEL BUTTON @@@@ CANCEL BUTTON @@@@ CANCEL BUTTON */
+.cancel-button {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin-top: 22px;
+
+}
+
+.cancel-button:hover {
+    color: black;
+}
+
+/*
+followed step-by-step from this tutorial:
+https://www.youtube.com/watch?v=SR5GxoFhIAU&ab_channel=freeCodeCamp.org */
